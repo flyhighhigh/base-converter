@@ -1,6 +1,5 @@
 const card = document.querySelector('.mycard')
 const title = document.querySelector('h1')
-const forms = document.querySelectorAll('.form-control')
 const labels = document.querySelectorAll('.mylabel')
 
 body.style.transition = '0.6s'
