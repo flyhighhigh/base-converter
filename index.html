@@ -64,23 +64,11 @@
         </footer>
     </div>
     <script>
-        const toggle = document.getElementById('toggle')
-        const body = document.querySelector('body')
-        const card = document.querySelector('.mycard')
-        const title = document.querySelector('h1')
-        const forms = document.querySelectorAll('.form-control')
-        const labels = document.querySelectorAll('.mylabel')
-
-
         if (!localStorage['theme']) {
             localStorage['theme'] = 'light_mode'
         }
+        const body = document.querySelector('body')
         body.className = localStorage['theme']
-        if (localStorage['theme'] == 'light_mode') {
-            toggle.innerHTML = 'dark_mode'
-        } else {
-            toggle.innerHTML = 'light_mode'
-        }
         // 這一段要提前渲染，所以要inline
         // 不然darkmode使用者打開網頁會先閃白再變成全黑
     </script>

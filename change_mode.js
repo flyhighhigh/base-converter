@@ -1,3 +1,9 @@
+const toggle = document.getElementById('toggle')
+const card = document.querySelector('.mycard')
+const title = document.querySelector('h1')
+const forms = document.querySelectorAll('.form-control')
+const labels = document.querySelectorAll('.mylabel')
+
 body.style.transition = '0.6s'
 card.style.transition = '0.4s'
 title.style.transition = '0.4s'
@@ -6,6 +12,12 @@ for (let f of forms) {
 }
 for (let l of labels) {
     l.style.transition = '0.1s'
+}
+
+if (localStorage['theme'] == 'light_mode') {
+    toggle.innerHTML = 'dark_mode'
+} else {
+    toggle.innerHTML = 'light_mode'
 }
 
 toggle.addEventListener('click', (e) => {
