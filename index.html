@@ -68,7 +68,11 @@
             localStorage['theme'] = 'light_mode'
         }
         const body = document.querySelector('body')
+        const toggle = document.getElementById('toggle')
+
         body.className = localStorage['theme']
+        toggle.innerHTML = body.className == 'light_mode' ? 'dark_mode' : 'light_mode'
+
         // 這一段要提前渲染，所以要inline
         // 不然darkmode使用者打開網頁會先閃白再變成全黑
     </script>
