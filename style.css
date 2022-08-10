@@ -1,4 +1,4 @@
-.lightmode {
+.light_mode {
     --my-body-bg: #fff;
     --my-card-bg: #f8f9fa;
     --my-label-color: #6c757d;
@@ -6,7 +6,7 @@
     --my-form-text: #646464;
     --my-title: #212121;
 }
-.darkmode {
+.dark_mode {
     --my-body-bg: #212121;
     --my-card-bg: #2e2e2e;
     --my-label-color: #bdbdbd;
