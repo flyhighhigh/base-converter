@@ -26,7 +26,7 @@ binary.addEventListener('input',(e) => {
     }else if(isBinary(binary.value)){
         let val = parseInt(binary.value,2)
         demical.value = val
-        hex.value = val.toString(16)
+        hex.value = val.toString(16).toUpperCase()
     }else{
         demical.value = hex.value = 'error input'
     }
@@ -38,7 +38,7 @@ demical.addEventListener('input',(e) => {
     }else if(!isNaN(demical.value)){
         let val = parseInt(demical.value)
         binary.value = val.toString(2)
-        hex.value = val.toString(16)
+        hex.value = val.toString(16).toUpperCase()
     }else{
         binary.value = hex.value = 'error input'
     }
@@ -51,6 +51,7 @@ hex.addEventListener('input',(e) => {
         let val = parseInt(hex.value,16)
         demical.value = val
         binary.value = val.toString(2)
+        hex.value = hex.value.toUpperCase()
     }else{
         demical.value = binary.value = 'error input'
     }
