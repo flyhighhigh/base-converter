@@ -1,0 +1,51 @@
+.lightmode {
+    --my-body-bg: #fff;
+    --my-card-bg: #f8f9fa;
+    --my-label-color: #6c757d;
+    --my-form-bg: #fff;
+    --my-form-text: #646464;
+    --my-title: #212121;
+}
+.darkmode {
+    --my-body-bg: #212121;
+    --my-card-bg: #2e2e2e;
+    --my-label-color: #bdbdbd;
+    --my-form-bg: #212121;
+    --my-form-text: #d3d3d3;
+    --my-title: #d3d3d3;
+}
+
+body {
+    font-weight: 600;
+    background-color: var(--my-body-bg);
+}
+
+.mycard {
+    background-color: var(--my-card-bg);
+}
+.mylabel{
+    color: var(--my-label-color)!important;
+}
+.form-control {
+    font-weight: 600;
+    background-color: var(--my-form-bg);
+    color: var(--my-form-text);
+    border-color: transparent;
+    
+}
+.form-control:focus {
+    background-color: var(--my-form-bg);
+    color: var(--my-form-text);
+    border-color: transparent;
+}
+.title{
+    color: var(--my-title);
+}
+i {
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+}
+footer {
+    font-weight: 500;
+}

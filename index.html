@@ -9,51 +9,43 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./style.css">
     <title>Number Converter - 線上進位轉換</title>
 </head>
-<style>
-    body{
-        font-weight:600;
-    }
-    footer{
-        font-weight:500;
-    }
-    .form-control{
-        font-weight:600;
-        color: #646464;
-    }
-</style>
 
-<body>
+<body class="lightmode">
     <div class="container py-5 px-lg-5">
-        <div class="py-5 px-lg-5 bg-light rounded-3">
+        <div class="py-5 px-lg-5 mycard rounded-3">
             <div class="container-fluid p-5">
-                
-                <h1 class="display-5 fw-bold text-center py-3">進位轉換</h1>
+
+                <h1 class="display-5 fw-bold text-center py-3 title">進位轉換</h1>
 
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-8 py-3">
                         <div class="form-floating ">
-                            <input type="text" class="form-control form-control-lg shadow border-light " id="binary" placeholder="0">
-                            <label for="demical" class="text-muted">二進位</label>
+                            <input type="text" class="form-control form-control-lg shadow form-light" id="binary"
+                                placeholder="0">
+                            <label for="demical" class="mylabel label-light">二進位</label>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-8 py-3">
                         <div class="form-floating ">
-                            <input type="text" class="form-control form-control-lg shadow border-light" id="demical" placeholder="0">
-                            <label for="demical" class="text-muted">十進位</label>
+                            <input type="text" class="form-control form-control-lg shadow form-light" id="demical"
+                                placeholder="0">
+                            <label for="demical" class="mylabel label-light">十進位</label>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-8 py-3">
                         <div class="form-floating ">
-                            <input type="text" class="form-control form-control-lg shadow border-light" id="hex" placeholder="0">
-                            <label for="hex" class="text-muted">十六進位</label>
+                            <input type="text" class="form-control form-control-lg shadow form-light" id="hex"
+                                placeholder="0">
+                            <label for="hex" class="mylabel label-light">十六進位</label>
                         </div>
                     </div>
                 </div>
@@ -63,8 +55,10 @@
             <div class="container align-items-center justify-content-center d-flex">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a href="https://github.com/flyhighhigh/number-converter" class="nav-link text-muted">&copy; 2022 flyhighhigh_vc</a>
+                        <a href="https://github.com/flyhighhigh/number-converter"
+                            class="nav-link mylabel label-light">&copy; 2022 flyhighhigh_vc</a>
                     </li>
+                    <i class="material-icons p-2 mylabel label-light" id="mode_toggle">dark_mode</i>
                 </ul>
             </div>
         </footer>
@@ -74,6 +68,7 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script src="./index.js"></script>
+    <script src="./dark.js"></script>
 </body>
 
 </html>
