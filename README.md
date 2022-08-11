@@ -1,12 +1,14 @@
-# 簡約、美觀的進位轉換網站，支援黑暗模式。
-
 [![進入網站](./cover.png)](https://flyhighhigh.github.io/base-converter/)
 
-暑假太閒，寫來練習JavaScript, HTML, CSS。
+
+
+## Introduction
+
+A simple webpage number-base converter, with dark-mode supported.
 
 
 
-### 參考資源
+## References
 
 JS & HTML & CSS
 
@@ -21,3 +23,7 @@ Darkmode
 Icons
 
 - https://icons8.com/
+
+
+
+PS. 暑假太閒，寫來練習JavaScript, HTML, CSS
